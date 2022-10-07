@@ -1,0 +1,4 @@
+<div id="container">
+  <span *ngFor="let code of codes" (click)="selected = code">{{ code }}</span>
+</div>
+<div class="msg" *ngIf="selected > -1">Clicked el : {{ selected }}</div>
